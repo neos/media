@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Functional\Domain\Model;
+namespace Neos\Media\Tests\Functional\Domain\Model;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -13,11 +13,11 @@ namespace TYPO3\Media\Tests\Functional\Domain\Model;
 use Doctrine\Common\Collections\ArrayCollection;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Flow\ResourceManagement\ResourceManager;
-use TYPO3\Media\Domain\Model\Asset;
-use TYPO3\Media\Domain\Model\Tag;
-use TYPO3\Media\Domain\Repository\AssetRepository;
-use TYPO3\Media\Domain\Repository\TagRepository;
-use TYPO3\Media\Tests\Functional\AbstractTest;
+use Neos\Media\Domain\Model\Asset;
+use Neos\Media\Domain\Model\Tag;
+use Neos\Media\Domain\Repository\AssetRepository;
+use Neos\Media\Domain\Repository\TagRepository;
+use Neos\Media\Tests\Functional\AbstractTest;
 
 /**
  * Testcase for an asset model

@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\ViewHelpers\Uri;
+namespace Neos\Media\Tests\Unit\ViewHelpers\Uri;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -12,14 +12,14 @@ namespace TYPO3\Media\Tests\Unit\ViewHelpers\Uri;
  */
 
 use Neos\FluidAdaptor\ViewHelpers\ViewHelperBaseTestcase;
-use TYPO3\Media\ViewHelpers\ImageViewHelper;
+use Neos\Media\ViewHelpers\ImageViewHelper;
 
 require_once(__DIR__ . '/../../../../../../Framework/Neos.FluidAdaptor/Tests/Unit/ViewHelpers/ViewHelperBaseTestcase.php');
 
 class ImageViewHelperTest extends ViewHelperBaseTestcase
 {
     /**
-     * var \TYPO3\Media\ViewHelpers\ImageViewHelper
+     * var \Neos\Media\ViewHelpers\ImageViewHelper
      */
     protected $viewHelper;
 

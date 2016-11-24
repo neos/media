@@ -11,7 +11,7 @@ This reference was automatically generated from code on 2016-06-07
 typo3.media:fileTypeIcon
 ------------------------
 
-Renders an <img> HTML tag for a filetype icon for a given TYPO3.Media's asset instance
+Renders an <img> HTML tag for a filetype icon for a given Neos.Media's asset instance
 
 :Implementation: TYPO3\\Media\\ViewHelpers\\FileTypeIconViewHelper
 
@@ -25,7 +25,7 @@ Arguments
 
 * ``data`` (array, *optional*): Additional data-* attributes. They will each be added with a "data-" prefix.
 
-* ``file`` (TYPO3\Media\Domain\Model\AssetInterface)
+* ``file`` (Neos\Media\Domain\Model\AssetInterface)
 
 * ``width`` (integer|null, *optional*)
 
@@ -184,7 +184,7 @@ Arguments
 typo3.media:image
 -----------------
 
-Renders an <img> HTML tag from a given TYPO3.Media's image instance
+Renders an <img> HTML tag from a given Neos.Media's image instance
 
 :Implementation: TYPO3\\Media\\ViewHelpers\\ImageViewHelper
 
@@ -198,7 +198,7 @@ Arguments
 
 * ``data`` (array, *optional*): Additional data-* attributes. They will each be added with a "data-" prefix.
 
-* ``image`` (TYPO3\Media\Domain\Model\ImageInterface, *optional*): The image to be rendered as an image
+* ``image`` (Neos\Media\Domain\Model\ImageInterface, *optional*): The image to be rendered as an image
 
 * ``width`` (integer, *optional*): Desired width of the image
 
@@ -240,7 +240,7 @@ Arguments
 
 * ``usemap`` (string, *optional*): Specifies an image as a client-side image-map
 
-* ``asset`` (TYPO3\Media\Domain\Model\AssetInterface, *optional*): The asset to be rendered - DEPRECATED, use the "image" argument instead
+* ``asset`` (Neos\Media\Domain\Model\AssetInterface, *optional*): The asset to be rendered - DEPRECATED, use the "image" argument instead
 
 
 
@@ -310,7 +310,7 @@ Expected result::
 typo3.media:thumbnail
 ---------------------
 
-Renders an <img> HTML tag from a given TYPO3.Media's asset instance
+Renders an <img> HTML tag from a given Neos.Media's asset instance
 
 :Implementation: TYPO3\\Media\\ViewHelpers\\ThumbnailViewHelper
 
@@ -324,7 +324,7 @@ Arguments
 
 * ``data`` (array, *optional*): Additional data-* attributes. They will each be added with a "data-" prefix.
 
-* ``asset`` (TYPO3\Media\Domain\Model\AssetInterface, *optional*): The asset to be rendered as a thumbnail
+* ``asset`` (Neos\Media\Domain\Model\AssetInterface, *optional*): The asset to be rendered as a thumbnail
 
 * ``width`` (integer, *optional*): Desired width of the thumbnail
 
@@ -430,7 +430,7 @@ Expected result::
 typo3.media:uri.image
 ---------------------
 
-Renders the src path of a thumbnail image of a given TYPO3.Media image instance
+Renders the src path of a thumbnail image of a given Neos.Media image instance
 
 :Implementation: TYPO3\\Media\\ViewHelpers\\Uri\\ImageViewHelper
 
@@ -440,7 +440,7 @@ Renders the src path of a thumbnail image of a given TYPO3.Media image instance
 Arguments
 *********
 
-* ``image`` (TYPO3\Media\Domain\Model\ImageInterface, *optional*)
+* ``image`` (Neos\Media\Domain\Model\ImageInterface, *optional*)
 
 * ``width`` (integer, *optional*): Desired width of the image
 
@@ -458,7 +458,7 @@ Arguments
 
 * ``preset`` (string, *optional*): Preset used to determine image configuration
 
-* ``asset`` (TYPO3\Media\Domain\Model\AssetInterface, *optional*): The image to be rendered - DEPRECATED, use the "image" argument instead
+* ``asset`` (Neos\Media\Domain\Model\AssetInterface, *optional*): The image to be rendered - DEPRECATED, use the "image" argument instead
 
 
 
@@ -495,7 +495,7 @@ Expected result::
 typo3.media:uri.thumbnail
 -------------------------
 
-Renders the src path of a thumbnail image of a given TYPO3.Media asset instance
+Renders the src path of a thumbnail image of a given Neos.Media asset instance
 
 :Implementation: TYPO3\\Media\\ViewHelpers\\Uri\\ThumbnailViewHelper
 
@@ -505,7 +505,7 @@ Renders the src path of a thumbnail image of a given TYPO3.Media asset instance
 Arguments
 *********
 
-* ``asset`` (TYPO3\Media\Domain\Model\AssetInterface, *optional*)
+* ``asset`` (Neos\Media\Domain\Model\AssetInterface, *optional*)
 
 * ``width`` (integer, *optional*): Desired width of the thumbnail
 

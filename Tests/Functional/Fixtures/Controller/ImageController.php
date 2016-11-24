@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Functional\Fixtures\Controller;
+namespace Neos\Media\Tests\Functional\Fixtures\Controller;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -16,9 +16,9 @@ use Neos\Flow\Mvc\Controller\ActionController;
 use Neos\Flow\Mvc\View\ViewInterface;
 use Neos\Flow\ResourceManagement\ResourceManager;
 use Neos\FluidAdaptor\View\TemplateView;
-use TYPO3\Media\Domain\Model\Image;
-use TYPO3\Media\Domain\Model\ImageVariant;
-use TYPO3\Media\Domain\Repository\AssetRepository;
+use Neos\Media\Domain\Model\Image;
+use Neos\Media\Domain\Model\ImageVariant;
+use Neos\Media\Domain\Repository\AssetRepository;
 
 /**
  * An Image Controller for testing purposes
@@ -113,7 +113,7 @@ class ImageController extends ActionController
     /**
      * Shows an image variant
      *
-     * @param \TYPO3\Media\Domain\Model\ImageVariant $imageVariant
+     * @param \Neos\Media\Domain\Model\ImageVariant $imageVariant
      * @return void
      */
     public function showImageVariantAction(ImageVariant $imageVariant)

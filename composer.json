@@ -1,16 +1,19 @@
 {
-    "name": "typo3/media",
-    "type": "typo3-flow-package",
+    "name": "neos/media",
+    "type": "neos-package",
     "description": "The Media package",
     "license": "GPL-3.0+",
     "require": {
-        "typo3/flow": "*",
-        "typo3/imagine": "*",
+        "neos/flow": "*",
+        "neos/imagine": "*",
         "neos/fluid-adaptor": "*"
     },
+    "replace": {
+      "typo3/media": "self.version"
+    },
     "autoload": {
-        "psr-0": {
-            "TYPO3\\Media": "Classes"
+        "psr-4": {
+            "Neos\\Media\\": "Classes"
         }
     },
     "extra": {

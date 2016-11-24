@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Validator;
+namespace Neos\Media\Tests\Unit\Validator;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,8 +11,8 @@ namespace TYPO3\Media\Tests\Unit\Validator;
  * source code.
  */
 use Neos\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\ImageInterface;
-use TYPO3\Media\Validator\ImageSizeValidator;
+use Neos\Media\Domain\Model\ImageInterface;
+use Neos\Media\Validator\ImageSizeValidator;
 
 /**
  * Testcase for the ImageSizeValidator

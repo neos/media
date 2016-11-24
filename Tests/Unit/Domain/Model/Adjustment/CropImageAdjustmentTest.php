@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Domain\Model\Adjustment;
+namespace Neos\Media\Tests\Unit\Domain\Model\Adjustment;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -13,9 +13,9 @@ namespace TYPO3\Media\Tests\Unit\Domain\Model\Adjustment;
 
 use Imagine\Image\Box;
 use Neos\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment;
-use TYPO3\Media\Domain\Model\Adjustment\ResizeImageAdjustment;
-use TYPO3\Media\Domain\Model\ImageInterface;
+use Neos\Media\Domain\Model\Adjustment\CropImageAdjustment;
+use Neos\Media\Domain\Model\Adjustment\ResizeImageAdjustment;
+use Neos\Media\Domain\Model\ImageInterface;
 
 /**
  * Test case for the Crop Image Adjustment
@@ -72,11 +72,11 @@ class CropImageAdjustmentTest extends UnitTestCase
      */
     public function refitFitsCropPropertionWithinImageSizeConstraints($cropX, $cropY, $cropWidth, $cropHeight, $newImageWidth, $newImageHeight, $expectedX, $expectedY, $expectedWidth, $expectedHeight)
     {
-        $mockImage = $this->getMockBuilder(\TYPO3\Media\Domain\Model\Image::class)->disableOriginalConstructor()->getMock();
+        $mockImage = $this->getMockBuilder(\Neos\Media\Domain\Model\Image::class)->disableOriginalConstructor()->getMock();
         $mockImage->expects($this->any())->method('getWidth')->will($this->returnValue($newImageWidth));
         $mockImage->expects($this->any())->method('getHeight')->will($this->returnValue($newImageHeight));
 
-        $mockCropImageAdjustment = $this->getAccessibleMock(\TYPO3\Media\Domain\Model\Adjustment\CropImageAdjustment::class, ['dummy'], [], '', false);
+        $mockCropImageAdjustment = $this->getAccessibleMock(\Neos\Media\Domain\Model\Adjustment\CropImageAdjustment::class, ['dummy'], [], '', false);
         $mockCropImageAdjustment->_set('x', $cropX);
         $mockCropImageAdjustment->_set('y', $cropY);
         $mockCropImageAdjustment->_set('width', $cropWidth);

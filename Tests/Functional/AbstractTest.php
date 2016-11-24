@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Functional;
+namespace Neos\Media\Tests\Functional;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *

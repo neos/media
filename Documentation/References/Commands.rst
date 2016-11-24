@@ -70,7 +70,7 @@ Options
 ``--preset``
   Preset name, if not provided thumbnails are created for all presets
 ``--async``
-  Asynchronous generation, if not provided the setting ``TYPO3.Media.asyncThumbnails`` is used
+  Asynchronous generation, if not provided the setting ``Neos.Media.asyncThumbnails`` is used
 
 
 

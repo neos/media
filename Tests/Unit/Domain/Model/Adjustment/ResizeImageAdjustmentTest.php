@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Domain\Model\Adjustment;
+namespace Neos\Media\Tests\Unit\Domain\Model\Adjustment;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,10 +11,10 @@ namespace TYPO3\Media\Tests\Unit\Domain\Model\Adjustment;
  * source code.
  */
 
-use TYPO3\Media\Imagine\Box;
+use Neos\Media\Imagine\Box;
 use Neos\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Adjustment\ResizeImageAdjustment;
-use TYPO3\Media\Domain\Model\ImageInterface;
+use Neos\Media\Domain\Model\Adjustment\ResizeImageAdjustment;
+use Neos\Media\Domain\Model\ImageInterface;
 
 /**
  * Test case for the Resize Image Adjustment

@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\TypeConverter;
+namespace Neos\Media\Tests\Unit\TypeConverter;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -16,9 +16,9 @@ use Neos\Flow\Property\PropertyMappingConfiguration;
 use Neos\Flow\Property\TypeConverter\PersistentObjectConverter;
 use Neos\Flow\Reflection\ReflectionService;
 use Neos\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Image;
-use TYPO3\Media\Domain\Model\ImageInterface;
-use TYPO3\Media\TypeConverter\ImageInterfaceConverter;
+use Neos\Media\Domain\Model\Image;
+use Neos\Media\Domain\Model\ImageInterface;
+use Neos\Media\TypeConverter\ImageInterfaceConverter;
 use Neos\Flow\ResourceManagement\PersistentResource;
 
 /**

@@ -7,20 +7,20 @@ TYPO3:
     autoCreateThumbnailPresets: true
     asset:
       modelMappingStrategy:
-        default: TYPO3\Media\Domain\Model\Document
+        default: Neos\Media\Domain\Model\Document
         patterns:
           '[image/.*]':
-            className: TYPO3\Media\Domain\Model\Image
+            className: Neos\Media\Domain\Model\Image
           '[audio/.*]':
-            className: TYPO3\Media\Domain\Model\Audio
+            className: Neos\Media\Domain\Model\Audio
           '[video/.*]':
-            className: TYPO3\Media\Domain\Model\Video
+            className: Neos\Media\Domain\Model\Video
     image:
       defaultOptions:
         quality: 90
         convertCMYKToRGB: true
     thumbnailGenerators:
-      TYPO3\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator:
+      Neos\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator:
         resolution: 120
         supportedExtensions:
           - pdf
@@ -28,7 +28,7 @@ TYPO3:
           - ai
         paginableDocuments:
           - pdf
-      TYPO3\Media\Domain\Model\ThumbnailGenerator\FontDocumentThumbnailGenerator:
+      Neos\Media\Domain\Model\ThumbnailGenerator\FontDocumentThumbnailGenerator:
         supportedExtensions:
           - ttf
           - otf
@@ -44,12 +44,12 @@ TYPO3:
       'Media:Commands':
         title: 'Media Command Reference'
         packageKeys:
-          - TYPO3.Media
-        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/TYPO3.Media/Documentation/References/Commands.rst'
+          - Neos.Media
+        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/Neos.Media/Documentation/References/Commands.rst'
     references:
       'Media:Validators':
         title: 'Media Validator Reference'
-        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/TYPO3.Media/Documentation/References/Validators.rst'
+        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/Neos.Media/Documentation/References/Validators.rst'
         affectedClasses:
           parentClassName: Neos\Flow\Validation\Validator\AbstractValidator
           classNamePattern: '/^TYPO3\\Media\\Validator\\.*$/i'
@@ -57,7 +57,7 @@ TYPO3:
           implementationClassName: TYPO3\DocTools\Domain\Service\FlowValidatorClassParser
       'Media:ViewHelpers':
         title: 'Media ViewHelper Reference'
-        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/TYPO3.Media/Documentation/References/ViewHelpers.rst'
+        savePathAndFilename: '%FLOW_PATH_PACKAGES%Neos/Neos.Media/Documentation/References/ViewHelpers.rst'
         affectedClasses:
           parentClassName: Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper
           classNamePattern: '/^TYPO3\\Media\\ViewHelpers\\.*$/i'
@@ -65,17 +65,17 @@ TYPO3:
           implementationClassName: TYPO3\DocTools\Domain\Service\FluidViewHelperClassParser
           options:
             namespaces:
-              typo3.media: TYPO3\Media\ViewHelpers
+              typo3.media: Neos\Media\ViewHelpers
 Neos:
   Flow:
     persistence:
       doctrine:
         eventListeners:
-          TYPO3\Media\Domain\EventListener\ImageEventListener:
+          Neos\Media\Domain\EventListener\ImageEventListener:
             events:
               - postRemove
-            listener: TYPO3\Media\Domain\EventListener\ImageEventListener
+            listener: Neos\Media\Domain\EventListener\ImageEventListener
     mvc:
       routes:
-        TYPO3.Media:
+        Neos.Media:
           position: 'before TYPO3.Neos'

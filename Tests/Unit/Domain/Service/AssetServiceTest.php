@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Domain\Service;
+namespace Neos\Media\Tests\Unit\Domain\Service;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -12,12 +12,12 @@ namespace TYPO3\Media\Tests\Unit\Domain\Service;
  */
 
 use Neos\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Asset;
-use TYPO3\Media\Domain\Repository\AssetRepository;
-use TYPO3\Media\Domain\Repository\AudioRepository;
-use TYPO3\Media\Domain\Service\AssetService;
-use TYPO3\Media\Domain\Model\Audio;
-use TYPO3\Media\Fixtures\AssetTypeWithoutRepository;
+use Neos\Media\Domain\Model\Asset;
+use Neos\Media\Domain\Repository\AssetRepository;
+use Neos\Media\Domain\Repository\AudioRepository;
+use Neos\Media\Domain\Service\AssetService;
+use Neos\Media\Domain\Model\Audio;
+use Neos\Media\Fixtures\AssetTypeWithoutRepository;
 
 require_once(__DIR__ . '/../../Fixtures/AssetTypeWithoutRepository.php');
 
