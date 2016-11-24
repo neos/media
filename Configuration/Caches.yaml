@@ -1,0 +1,5 @@
+TYPO3_Media_ImageSize:
+  frontend: Neos\Flow\Cache\Frontend\VariableFrontend
+  backend: Neos\Flow\Cache\Backend\SimpleFileBackend
+  backendOptions:
+    defaultLifetime: 0
