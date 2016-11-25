@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Validator;
+namespace Neos\Media\Tests\Unit\Validator;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,9 +11,9 @@ namespace TYPO3\Media\Tests\Unit\Validator;
  * source code.
  */
 
-use TYPO3\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\ImageInterface;
-use TYPO3\Media\Validator\ImageOrientationValidator;
+use Neos\Flow\Tests\UnitTestCase;
+use Neos\Media\Domain\Model\ImageInterface;
+use Neos\Media\Validator\ImageOrientationValidator;
 
 /**
  * Testcase for the ImageOrientationValidator
@@ -49,7 +49,7 @@ class ImageOrientationValidatorTest extends UnitTestCase
     /**
      * @test
      * @dataProvider invalidOptionsTestsDataProvider
-     * @expectedException \TYPO3\Flow\Validation\Exception\InvalidValidationOptionsException
+     * @expectedException \Neos\Flow\Validation\Exception\InvalidValidationOptionsException
      * @param array $options
      */
     public function invalidOptionsTests(array $options)

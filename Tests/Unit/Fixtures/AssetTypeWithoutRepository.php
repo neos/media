@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Fixtures;
+namespace Neos\Media\Fixtures;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,7 +11,7 @@ namespace TYPO3\Media\Fixtures;
  * source code.
  */
 
-use TYPO3\Media\Domain\Model\Asset;
+use Neos\Media\Domain\Model\Asset;
 
 class AssetTypeWithoutRepository extends Asset
 {

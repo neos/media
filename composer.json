@@ -1,16 +1,19 @@
 {
-    "name": "typo3/media",
+    "name": "neos/media",
     "type": "neos-package",
     "description": "The Media package",
     "license": "GPL-3.0+",
     "require": {
-        "typo3/flow": "*",
-        "typo3/imagine": "*",
+        "neos/flow": "*",
+        "neos/imagine": "*",
         "neos/fluid-adaptor": "*"
     },
+    "replace": {
+        "typo3/media": "self.version"
+    },
     "autoload": {
-        "psr-0": {
-            "TYPO3\\Media": "Classes"
+        "psr-4": {
+            "Neos\\Media\\": "Classes"
         }
     },
     "extra": {
@@ -49,7 +52,23 @@
             "TYPO3.Flow-20151113161300",
             "TYPO3.Form-20160601101500",
             "TYPO3.Flow-20161115140400",
-            "TYPO3.Flow-20161115140430"
+            "TYPO3.Flow-20161115140430",
+            "Neos.Flow-20161124204700",
+            "Neos.Flow-20161124204701",
+            "Neos.Twitter.Bootstrap-20161124204912",
+            "Neos.Form-20161124205254",
+            "Neos.Flow-20161124224015",
+            "Neos.Party-20161124225257",
+            "Neos.Eel-20161124230101",
+            "Neos.Kickstart-20161124230102",
+            "Neos.Setup-20161124230842",
+            "Neos.Imagine-20161124231742",
+            "Neos.Media-20161124233100",
+            "Neos.NodeTypes-20161125002300",
+            "Neos.SiteKickstarter-20161125002311",
+            "Neos.Neos-20161125002322",
+            "Neos.ContentRepository-20161125012000",
+            "Neos.Fusion-20161125013710"
         ]
     }
 }

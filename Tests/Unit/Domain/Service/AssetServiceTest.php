@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Domain\Service;
+namespace Neos\Media\Tests\Unit\Domain\Service;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,13 +11,13 @@ namespace TYPO3\Media\Tests\Unit\Domain\Service;
  * source code.
  */
 
-use TYPO3\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Asset;
-use TYPO3\Media\Domain\Repository\AssetRepository;
-use TYPO3\Media\Domain\Repository\AudioRepository;
-use TYPO3\Media\Domain\Service\AssetService;
-use TYPO3\Media\Domain\Model\Audio;
-use TYPO3\Media\Fixtures\AssetTypeWithoutRepository;
+use Neos\Flow\Tests\UnitTestCase;
+use Neos\Media\Domain\Model\Asset;
+use Neos\Media\Domain\Repository\AssetRepository;
+use Neos\Media\Domain\Repository\AudioRepository;
+use Neos\Media\Domain\Service\AssetService;
+use Neos\Media\Domain\Model\Audio;
+use Neos\Media\Fixtures\AssetTypeWithoutRepository;
 
 require_once(__DIR__ . '/../../Fixtures/AssetTypeWithoutRepository.php');
 
@@ -47,7 +47,7 @@ class AssetServiceTest extends UnitTestCase
     {
         $mockAsset = $this->getMockBuilder($modelClassName)->disableOriginalConstructor()->getMock();
 
-        $mockObjectManager = $this->createMock(\TYPO3\Flow\ObjectManagement\ObjectManagerInterface::class);
+        $mockObjectManager = $this->createMock(\Neos\Flow\ObjectManagement\ObjectManagerInterface::class);
         $mockObjectManager->expects($this->once())
             ->method('get')
             ->will($this->returnValue($this->createMock($expectedRepositoryClassName)));

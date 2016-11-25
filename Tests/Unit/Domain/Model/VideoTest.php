@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Unit\Domain\Model;
+namespace Neos\Media\Tests\Unit\Domain\Model;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,9 +11,9 @@ namespace TYPO3\Media\Tests\Unit\Domain\Model;
  * source code.
  */
 
-use TYPO3\Flow\ResourceManagement\PersistentResource;
-use TYPO3\Flow\Tests\UnitTestCase;
-use TYPO3\Media\Domain\Model\Video;
+use Neos\Flow\ResourceManagement\PersistentResource;
+use Neos\Flow\Tests\UnitTestCase;
+use Neos\Media\Domain\Model\Video;
 
 /**
  * Test case for the Video model

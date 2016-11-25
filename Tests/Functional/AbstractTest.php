@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\Media\Tests\Functional;
+namespace Neos\Media\Tests\Functional;
 
 /*
- * This file is part of the TYPO3.Media package.
+ * This file is part of the Neos.Media package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -11,11 +11,11 @@ namespace TYPO3\Media\Tests\Functional;
  * source code.
  */
 
-use TYPO3\Flow\Persistence\PersistenceManagerInterface;
-use TYPO3\Flow\ResourceManagement\PersistentResource;
-use TYPO3\Flow\ResourceManagement\ResourceManager;
-use TYPO3\Flow\Tests\FunctionalTestCase;
-use TYPO3\Flow\Utility\Files;
+use Neos\Flow\Persistence\PersistenceManagerInterface;
+use Neos\Flow\ResourceManagement\PersistentResource;
+use Neos\Flow\ResourceManagement\ResourceManager;
+use Neos\Flow\Tests\FunctionalTestCase;
+use Neos\Utility\Files;
 
 /**
  * Abstract Functional Test template

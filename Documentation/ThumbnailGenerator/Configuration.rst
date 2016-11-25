@@ -18,7 +18,7 @@ You can change the priority (higher is better) for an existing Generator, by edi
     TYPO3:
       Media:
         thumbnailGenerators:
-          'TYPO3\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator':
+          'Neos\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator':
             priority: 100
 
 Disabling an existing Generator
@@ -29,7 +29,7 @@ To disable an existing Generator use the ``disable`` configuration option for th
     TYPO3:
       Media:
         thumbnailGenerators:
-          'TYPO3\Media\Domain\Model\ThumbnailGenerator\IconThumbnailGenerator':
+          'Neos\Media\Domain\Model\ThumbnailGenerator\IconThumbnailGenerator':
             disable: true
 
 Specific configuration
@@ -37,7 +37,7 @@ Specific configuration
 
 Check ``Settings.yaml`` in the Media package to see the available configurations by Generator::
 
-    'TYPO3\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator':
+    'Neos\Media\Domain\Model\ThumbnailGenerator\DocumentThumbnailGenerator':
         resolution: 120
         supportedExtensions: [ 'pdf', 'eps', 'ai' ]
         paginableDocuments: [ 'pdf' ]

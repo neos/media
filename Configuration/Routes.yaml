@@ -5,7 +5,7 @@
   name:  'Thumbnail'
   uriPattern: 'media/thumbnail/{thumbnail}'
   defaults:
-    '@package':    'TYPO3.Media'
+    '@package':    'Neos.Media'
     '@controller': 'Thumbnail'
     '@action':     'thumbnail'
   httpMethods: ['GET']
