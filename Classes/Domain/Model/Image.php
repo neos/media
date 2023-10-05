@@ -138,13 +138,13 @@ class Image extends Asset implements ImageInterface, VariantSupportInterface
     /**
      * Returns the variant identified by $presetIdentifier and $presetVariantName (if existing)
      *
-     * @param string $presetIdentifier
-     * @param string $presetVariantName
+     * @param string|null $presetIdentifier
+     * @param string|null $presetVariantName
      * @return AssetVariantInterface|ImageVariant
      */
-    public function getVariant(string $presetIdentifier, string $presetVariantName): ?AssetVariantInterface
+    public function getVariant(string|null $presetIdentifier = null, string|null $presetVariantName = null): ?AssetVariantInterface
     {
-        if ($this->variants->isEmpty()) {
+        if ($this->variants->isEmpty() || $presetIdentifier === null || $presetVariantName === null) {
             return null;
         }
 
