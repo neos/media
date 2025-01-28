@@ -161,10 +161,8 @@ class CropImageAdjustment extends AbstractImageAdjustment
 
     /**
      * This setter accepts strings in order to make configuration / mapping of settings easier.
-     *
-     * @param AspectRatio | string | null $aspectRatio
      */
-    public function setAspectRatio($aspectRatio = null): void
+    public function setAspectRatio(AspectRatio|string|null $aspectRatio = null): void
     {
         if ($aspectRatio === null) {
             $this->aspectRatioAsString = null;
