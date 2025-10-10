@@ -42,16 +42,16 @@ class ImageHelper implements ProtectedContextAwareInterface
      */
     public function createThumbnail(
         AssetInterface $asset,
-        string $preset = null,
-        int $width = null,
-        int $maximumWidth = null,
-        int $height = null,
-        int $maximumHeight = null,
+        ?string $preset = null,
+        ?int $width = null,
+        ?int $maximumWidth = null,
+        ?int $height = null,
+        ?int $maximumHeight = null,
         bool $allowCropping = false,
         bool $allowUpScaling = false,
         bool $async = false,
-        int $quality = null,
-        string $format = null
+        ?int $quality = null,
+        ?string $format = null
     ): ?ImageInterface {
         if (!empty($preset)) {
             $thumbnailConfiguration = $this->thumbnailService->getThumbnailConfigurationForPreset($preset);
