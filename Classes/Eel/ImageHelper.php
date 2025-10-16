@@ -41,7 +41,7 @@ class ImageHelper implements ProtectedContextAwareInterface
      * @throws ThumbnailServiceException
      */
     public function createThumbnail(
-        AssetInterface $asset,
+        ?AssetInterface $asset,
         ?string $preset = null,
         ?int $width = null,
         ?int $maximumWidth = null,
